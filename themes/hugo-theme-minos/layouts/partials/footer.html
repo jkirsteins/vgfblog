@@ -23,7 +23,19 @@
 <footer id="footer">
     <div class="outer">
         <div id="footer-info" class="inner">
-            &copy; {{ now.Format "2006"}} {{ or .Site.Author.name .Site.Title }}
+            {{ range .Site.Menus.main }}
+
+            <a href="{{ .URL }}">
+                {{ if .Pre }}
+                    {{ .Pre }}
+                {{ else }}
+                    {{ .Name }}
+                {{ end }}
+            </a>
+
+            {{ end }}
+            <br/>
+            &copy; {{ now.Format "2006"}} <a href="https://www.twitter.com/jkirsteins">{{ .Site.Author.name }}</a>
             <br />
             Powered by <a href="https://gohugo.io" target="_blank">Hugo</a> with theme <a href="https://github.com/carsonip/hugo-theme-minos" target="_blank">Minos</a>
         </div>
