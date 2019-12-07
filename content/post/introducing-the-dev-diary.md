@@ -1,29 +1,39 @@
 ---
-title: "Introducing the Dev Diary"
+title: "What is this?"
 date: 2019-12-06T05:59:17+01:00
-draft: true
+draft: false
 ---
 
-I'm building a tool for improving financial habits. Something to help realize how much you spend, how much you want to spend, and how to minimize the difference.
+Hello World!
 
-I want the work to be completely in the open, so I'm starting an accompanying dev diary.
+If you're unsure what exactly gets posted here, or why, please start here.
 
-The target is to post a new article every week on the progress, and some related technical aspect. Either a problem I had to solve, or an interesting aspect of a related technology, or retrospective evaluations of decisions made before.
+<!--more-->
 
-It will not necessarily be a "tech blog". As I'm building a financial tool, and hoping to integrate it with financial APIs, there might be regulatory aspects to it as well. For example:
+[I'm](https://www.twitter.com/jkirsteins) building a tool for improving financial habits. The short of it is - this is a development diary, where I will post about the related product, technical, and marketing challenges.
 
-- what does the regulation to access bank APIs mean? 
-- what are the regulatory differences in providing services in the EU vs the US
-- what are the costs of getting licenced to do X
-- etc.
+## Background
 
-Finally, one last aspect that will likely be mentioned here, is the indie hacking aspect of it. This is not a day job, nor is the ultimate goal for it to necessarily become one. The goal is to make something useful. For myself (primarily) and others (aspirationally), while having a full time job, and spending time with family.
+I don't intend to build another budget app or a specialized spreadsheet. Nor an expense tracker. I aim to go further - beyond the purely technical.
 
-So expect the occasional post about trying to debug a background process while at the playground, or bringing kids to a customer interview, or about building a productive sideproject work cadence around date nights.
+The goal is to help form better financial habits and then stick to them.
 
-Things like that. To kick this off, here's:
-- [an overview of the planned architecture](#)
-- [a post about how I set up authentication, and the hurdles I had with JWT in the chosen architecture](#)
+It's an ambitious goal, and a lot goes into that.
 
+First of all, there's research. What constitutes good financial habits? How to help people stick with their goals?
+Second of all, it is also a technical challenge. The product needs to be built and work without issues;
+Finally, once something is up and running, should I be the only user? How do I find other users and convince them to try it?
 
+## Rationale for writing about it
 
+This is a side project. I have to find time for it amidst working a full-time job and spending time with my family. The time I spend on this project needs to count.
+
+Writing about it publicly should help me think more clearly, and be more accountable. It might even attract like-minded individuals to exchange ideas.
+
+And, if nothing else, at least I will get better at writing.
+
+## Where to start
+
+I haven't published any other articles yet. As I publish them, I will update this section with links to the ones that are good starters.
+
+Also, you can [find me on Twitter](https://www.twitter.com/jkirsteins), sign-up to receive updates by e-mail, or subscribe to the [Upcoming Products page on Product Hunt](https://www.producthunt.com/upcoming/very-good-finances).
