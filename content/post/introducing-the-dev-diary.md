@@ -24,7 +24,7 @@ First of all, there's research. What constitutes good financial habits? How to h
 Second of all, it is also a technical challenge. The product needs to be built and work without issues;
 Finally, once something is up and running, should I be the only user? How do I find other users and convince them to try it?
 
-## Rationale for writing about it
+## Rationale for writing
 
 This is a side project. I have to find time for it amidst working a full-time job and spending time with my family. The time I spend on this project needs to count.
 
