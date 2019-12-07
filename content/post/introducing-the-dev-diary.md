@@ -1,12 +1,14 @@
 ---
-title: "What is this?"
+title: "Introducing Very Good Finances"
+description: "Explanation of what kind of content is posted here, and why."
+ogimage: "/og_image__hello_world.png"
 date: 2019-12-06T05:59:17+01:00
 draft: false
 ---
 
 Hello World!
 
-If you're unsure what exactly gets posted here, or why, please start here.
+If you're unsure what exactly gets posted here, or why, start here.
 
 <!--more-->
 
