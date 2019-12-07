@@ -22,9 +22,9 @@ The goal is to help form better financial habits and then stick to them.
 
 It's an ambitious goal, and a lot goes into that.
 
-First of all, there's research. What constitutes good financial habits? How to help people stick with their goals?
-Second of all, it is also a technical challenge. The product needs to be built and work without issues;
-Finally, once something is up and running, should I be the only user? How do I find other users and convince them to try it?
+- First of all, there's research. What constitutes good financial habits? How to help people stick with their goals?
+- Second of all, it is also a technical challenge. The product needs to be built and work without issues;
+- Finally, once something is up and running, should I be the only user? How do I find other users and convince them to try it?
 
 ## Rationale for writing
 
