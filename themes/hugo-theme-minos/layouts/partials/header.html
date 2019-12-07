@@ -5,7 +5,15 @@
             <a id="logo" class="logo-text" href="{{ .Site.Home.Permalink }}">{{ .Site.Title }}</a>
             <nav id="main-nav">
                 {{ range .Site.Menus.main }}
-                <a class="main-nav-link" href="{{ .URL }}">{{ .Name }}</a>
+
+                <a class="main-nav-link" href="{{ .URL }}">
+                    {{ if .Pre }}
+                        {{ .Pre }}
+                    {{ else }}
+                        {{ .Name }}
+                    {{ end }}
+                </a>
+
                 {{ end }}
             </nav>
             <nav id="sub-nav">
