@@ -8,16 +8,24 @@ theme = "hugo-theme-minos"
 [menu]
 
   [[menu.main]]
+    weight = -200
     name = "Upcoming on Product Hunt"
     pre = '<i class="fab fa-product-hunt"></i>'
     url = "https://www.producthunt.com/upcoming/very-good-finances"
 
   [[menu.main]]
+    weight = -200
     name = "Content on GitHub"
     pre = '<i class="fab fa-github"></i>'
     url = "https://www.github.com/kirsis/vgfblog"
 
   [[menu.main]]
+    weight = -200
     name = "Twitter"
     pre = '<i class="fab fa-twitter"></i>'
     url = "https://www.twitter.com/jkirsteins"
+
+  [[menu.main]]
+    name = "Indie Hackers"
+    pre = '<i class="fas" style="font-family:Arial, Helvetica, sans-serif">IH</I>'
+    url = "https://www.indiehackers.com/jki"

@@ -57,6 +57,10 @@ The rest I would discover on the way, as I start talking to people about their b
 
 ![Screenshot as of 14 Dec 2019](/1st-retro-dash-ui.png)
 
+<center>
+*It is publicly available [here](https://app.dev.verygoodfinances.com).*
+</center>
+
 ### Development
 
 By 18 November, I had set up a simple application, where users could log in through Auth0. It was running only on my computer and would log out Safari users on every refresh.
@@ -90,7 +94,7 @@ While I knew I wanted to be public about the work, I hadn't set out any specific
 
 ### Starting a Newsletter
 
-I set up a newsletter about personal finance almost immediately. I rationalized this with the idea that I need to do research anyway, and this would let me interact with people who are interested in the topic.
+I set up [a newsletter about personal finance](https://thatfullpocket.com) almost immediately. I rationalized this with the idea that I need to do research anyway, and this would let me interact with people who are interested in the topic.
 
 To compound this failure at discipline, I jumped into the deep end straight off the bat. I failed to consult people who might know what it takes or to ask for advice. Instead, I set up a landing page, a mailing list, and then spent a third of my vacation googling about newsletters.
 
