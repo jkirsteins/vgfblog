@@ -2,6 +2,7 @@ baseURL = "https://blog.dev.verygoodfinances.com/"
 languageCode = "en-us"
 title = "Very Good Finances"
 theme = "hugo-theme-minos"
+
 [Author]
   Name = "Jānis Kiršteins"
 
