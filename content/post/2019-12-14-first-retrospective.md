@@ -3,6 +3,8 @@ title: "First Retrospective"
 date: 2019-12-14T16:44:32+01:00
 draft: false
 ogimage: /1st-retro-dash-ui.png
+categories: [retrospectives]
+tags: []
 ---
 
 I started working on Very Good Finances 6 weeks ago. Since then, my velocity has slowed down considerably, so I think it is time for some reflection.
@@ -58,7 +60,7 @@ The rest I would discover on the way, as I start talking to people about their b
 ![Screenshot as of 14 Dec 2019](/1st-retro-dash-ui.png)
 
 <center>
-*It is publicly available [here](https://app.dev.verygoodfinances.com).*
+*A screenshot of the current version as of 14-Dec-2019. It is going to be publicly available [here](https://app.dev.verygoodfinances.com) throughout its development.*
 </center>
 
 ### Development

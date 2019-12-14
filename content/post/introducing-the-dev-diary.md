@@ -4,6 +4,8 @@ description: "Explanation of what kind of content is posted here, and why."
 ogimage: "/og_image__hello_world.png"
 date: 2019-12-06T05:59:17+01:00
 draft: false
+tags: []
+categories: []
 ---
 
 Hello World!
