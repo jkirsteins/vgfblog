@@ -54,10 +54,14 @@ To display the budget, I could query the budget categories for a given user. To 
 ## First draft evaluation
 
 This design imposes some constraints:
-- it assumes that users want a budget aligned to monthly boundaries;
-- it requires me to generate these budget category items for each month in advance. If I fail to do so, the budget breaks (all the categories disappear).
 
-I'm not comfortable with either of these assumptions.
+- it assumes that users want a budget aligned to monthly boundaries;
+- these budget categories must exist in the database for each month we care about.
+
+The first one is an assumption about user behaviour. [These are usually incorrect](https://xkcd.com/1172/).
+
+The second constraint seems brittle. Luckily, it naturally disappears, as the
+model is refactored to support flexible boundaries.
 
 On the plus side, there is an interesting benefit from this structure, which my final approach lacks: the budget can change structures midway through. You can add a budget category in February that you did not have in January.
 
@@ -206,6 +210,27 @@ There are some potential pitfalls that I am aware of, but that I don't really kn
 
 - in the `BudgetInterval` extensions, I initialize a `DateTimeOffset` using a default calendar. This is going to be a Gregorian calendar. How will this impact [Japanese users](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.japanesecalendar?view=netframework-4.8), for example?
 - I need to be wary of introducing rounding errors when calculating budget modifier values for different time periods. If a budget modifier falls within a period only partially, we want to take into account a partial value. In the adjacent period, we want to use the remaining value. This is a perfect opportunity for subtle rounding errors to creep in, and display non-matching allocated amounts in different periods.
+
+## Off-budget transactions
+
+Savvy budgeters might point out that I have overlooked off-budget transactions
+and accounts. There are a few use cases for having this feature:
+
+1. Imagine you have three accounts. Two are day-to-day checkings accounts, and one is a savings account. You want money transfers between the checkings accounts to
+not affect the budget (it does not matter where the money is parked, just what
+you plan to spend it on).
+2. You might want to have an investment account. If you own stocks, you probably
+do not want their value fluctuations to affect your budget.
+3. Liabilities. If you lend money to someone, you would expect your net worth to remain the same, but the amount available for budgeting to decrease.
+
+All of these can be achieved by having accounts with different types, where the
+underlying transactions are tracked (to determine your net worth), but not
+counted towards the budget.
+
+VGF does not have these account types yet, but the entry point to supporting
+this would probably be in the `ITransactionStore.GetSumInPeriod` method. The budget
+does not care about the details, only what amount (that counts towards to the budget)
+has been spent.
 
 ## And that's it folks
 
